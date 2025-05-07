@@ -1,0 +1,53 @@
+$primary-color: #29d;
+
+body {
+    background-image: url(images/body-bg.webp), url(images/banner-bg.svg);
+    background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-size: cover, 100%;
+}
+
+a,
+a:hover {
+    color: unset;
+    text-decoration: unset;
+}
+
+.typo {
+    font-size: 17px;
+    line-height: 1.8;
+    word-wrap: break-word;
+    position: relative;
+    padding: 16px;
+
+    img {
+        max-width: 65%;
+        margin: 0 auto;
+        display: block;
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+
+    a:link {
+        color: $primary-color;
+        text-decoration: none;
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+        padding: .2em .4em;
+        margin: 0;
+        font-size: 85%;
+        white-space: break-spaces;
+        background-color: #656c7633;
+        border-radius: 6px;
+    }
+}
+
+.container {
+    min-height: calc(100vh - 128px);
+}
