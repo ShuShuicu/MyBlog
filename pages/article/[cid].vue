@@ -26,7 +26,7 @@ const cid = route.params.cid;
 
 // 获取文章数据
 const { data: response, error: fetchError } = await useAsyncData(`article-${cid}`, () =>
-    $fetch(`/api/v2/article/${cid}`)
+    $fetch(`/api/article/${cid}`)
 );
 
 // 错误状态

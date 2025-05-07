@@ -49,7 +49,7 @@ const performSearch = async () => {
     hasSearched.value = true;
 
     try {
-        const { data } = await useFetch(`/api/v2/search/${encodeURIComponent(searchQuery.value)}`, {
+        const { data } = await useFetch(`/api/search/${encodeURIComponent(searchQuery.value)}`, {
             params: {
                 page: currentPage.value,
                 pageSize

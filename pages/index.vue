@@ -38,7 +38,7 @@ const loadPosts = async () => {
     error.value = null;
 
     try {
-        const { data } = await useFetch('/api/v2/articles', {
+        const { data } = await useFetch('/api/articles', {
             params: { page: currentPage.value, pageSize },
         });
 

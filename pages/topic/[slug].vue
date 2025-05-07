@@ -67,7 +67,7 @@ const loadData = async () => {
 
     try {
         // 使用useAsyncData确保SSR兼容
-        const { data } = await useFetch(`/api/v2/topic/${slug}`, {
+        const { data } = await useFetch(`/api/topic/${slug}`, {
             params: {
                 page: page.value,
                 pageSize: pageSize.value
